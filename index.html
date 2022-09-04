@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="overlay"></div>
+        <nav class="nav">
+            <a href="#" class="nav__logo">
+                <img src="./images/favicon.png" alt="">
+                <p>my <span>music</span></p>
+            </a>
+
+            <a href="#" class="nav__item active"><i class='bx bxs-dashboard'></i>Browse</a>
+            <a href="#" class="nav__item"><i class='bx bxs-photo-album'></i>Album</a>
+            <a href="#" class="nav__item"><i class='bx bxs-user'></i>Artists</a>
+            <a href="#" class="nav__item"><i class='bx bxs-video'></i>Video</a>
+
+            <span class="nav__heading">My music</span>
+            <a href="#" class="nav__item"><i class='bx bxs-stopwatch'></i>Rencently Played</a>
+            <a href="#" class="nav__item"><i class='bx bxs-file-blank'></i>Local Files</a>
+
+            <span class="nav__heading">Playlist</span>
+            <a href="#" class="nav__item">General Playlist</a>
+            <a href="#" class="nav__item">Ease up beats</a>
+            <a href="#" class="nav__item">Pop songs</a>
+            <a href="#" class="nav__item">Mood swings</a>
+        </nav>
+        <section class="browse">
+            <div class="browse__header">
+                <div style="display: flex; align-items: center;">
+                    <i class='bx bx-menu menu-icon'></i>
+                    <div class="browse__search">
+                        <i class='bx bx-search-alt'></i>
+                        <input type="text" placeholder="Songs or singers...">
+                    </div>
+                    <div class="searched">
+                        <!-- <div class="searched__item">
+                            <div class="searched__item__song">
+                                <img class="img-song" src="./images/songs/ngau_hung.png">
+                                <p class="name-song">Ngẫu Hứng</p>
+                                <p class="author-song">Hoaprox</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="user-and-setting" style="display: flex; position: relative;">
+                    <div class="browse__user">
+                        <img src="./images/avarta.png">
+                        <p>Trung Phạm</p>
+                        <i class='bx bx-chevron-down-circle'></i>
+                    </div>
+                    <div class="browse__setting">
+                        <img src="./images/notification.png">
+                        <img src="./images/setting.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="browse__top-songs">
+                <h2>Top Songs</h2>
+                <span>- Top 10</span>
+                <div class="browse__top-songs__wrap">
+                    <!-- <div id='1' class="browse__top-songs__item">
+                        <img src="./images/songs/ngau_hung.png">
+                        <h3>Ngẫu Hững</h3>
+                        <p>Hoaprox</p>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="browse__music">
+                <div class="browse__music__playing">
+                    <h2>Now Playing</h2>
+                    <div class="box-playing">
+                        <div class="box-playing__thumb">
+                            <div class="thumb-img"><img src=""></div>
+                            <h4></h4>
+                            <p></p>
+                            <input type="range" value="0" step="0.2" min="0" max="100">
+                            <div class="time-song">
+                                <span class="time-song__current"></span>
+                                <span class="time-song__duration"></span>
+                            </div>
+                            <audio style="display: none;" src=""></audio>
+                        </div>
+                        <div class="box-playing__taskbar">
+                            <div class="repeat-music"><i message="Lặp lại" class='bx bx-repeat'></i></div>
+                            <div class="prev-music"><i message="Trở về" class='bx bx-skip-previous'></i></div>
+                            <div class="play-music"><i message="Phát (Space)" class='bx bx-play'></i><i message="Tạm dừng (Space)"
+                                    class='bx bx-pause'></i></div>
+                            <div class="next-music"><i message="Tiếp theo" class='bx bx-skip-next'></i></div>
+                            <div class="random-music"><i message="Xáo trộn" class='bx bx-shuffle'></i></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="browse__music__played">
+                    <div class="heading">
+                        <h2>Mostly Played💖</h2>
+                        <div class="heading__sub">
+                            55 songs on the list
+                            <div><i class='bx bx-down-arrow-alt'></i></div>
+                        </div>
+                    </div>
+                    <div class="box-played">
+                        <!-- <div class="box-played__item">
+                            <div class="box-played__item__song">
+                                <p class="order-song">01</p>
+                                <img class="img-song" src="./images/songs/ngau_hung.png">
+                                <div class="status-song">
+                                    <i class='bx bx-play'></i>
+                                    <img src="./images/music_playing.gif">
+                                </div>
+                                <p class="name-song">Ngẫu Hứng</p>
+                                <p class="author-song">Hoaprox</p>
+                            </div>
+                            <div class="box-played__item__song__more">
+                                <i class='bx bx-dots-horizontal-rounded'></i>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="./main.js"></script>
+
+</html>
